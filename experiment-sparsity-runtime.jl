@@ -3,7 +3,7 @@ using Distributed
 addprocs(10);
 
 @everywhere using LightGraphs
-@everywhere cd("/homes/liu1740/Research/spectral_flow/SLQ/")
+@everywhere cd(dirname(abspath(PROGRAM_FILE)))
 
 @everywhere include("PageRank.jl")
 @everywhere include("SLQcvx.jl") # this includes SLQ.jl
