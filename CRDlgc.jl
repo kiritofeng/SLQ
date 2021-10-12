@@ -1,7 +1,7 @@
 module CRDlgc
 using PyCall, LinearAlgebra
 function __init__()
-    include("setup-lgc.jl") # this will setup paths
+    #include("setup-lgc.jl") # this will setup paths
     py"""
     import numpy as np
     import scipy.sparse as sp
@@ -19,7 +19,7 @@ function __init__()
         return cluster,conductance,t2-t1
     """
     # remove our addition...
-    pop!(PyVector(pyimport("sys")."path"))
+    #pop!(PyVector(pyimport("sys")."path"))
 end
 
 # h is the maximum flow that an edge can handle. h=3 seems to give good sparsity
