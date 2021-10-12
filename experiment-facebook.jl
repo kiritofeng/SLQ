@@ -379,4 +379,4 @@ nonS = nontruth[randperm(MersenneTwister(seed),length(nontruth))[1:max(1,round(I
 features = labels
 labels = zeros(size(A,1))
 labels[truth] .= 1
-cluster,cond,time = GCN.gcn(G,S,nonS,features,labels)
+cluster,cond,time_gcn = GCN.gcn(G,S,nonS,features,labels)
