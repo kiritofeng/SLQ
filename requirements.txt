@@ -1,0 +1,3 @@
+matplotlib
+pygcn @ git+git://github.com/tkipf/pygcn.git
+localgraphclustering
